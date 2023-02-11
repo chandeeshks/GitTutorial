@@ -1,0 +1,38 @@
+<div class="container mt-3">
+    <h2>Signup</h2>
+    <form [formGroup]='signupform' (ngSubmit)='Submittedsignup()'>
+        <div class="mb-3 mt-3">
+            <label for="Fname">First Name</label>
+            <div class="col-sm-5">
+                <input type="text" id="Fname" class="form-control" name="Fname" placeholder="Enter FirstName" formControlName="fname">
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="Lname">Last Name</label>
+            <div class="col-sm-5">
+                <input type="text" id="Lname" class="form-control" name="Lname" placeholder="Enter LastName" formControlName="lname">
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="email">Email</label>
+            <div class="col-sm-5">
+                <input type="text" id="email" class="form-control" name="email" placeholder="Enter Email" formControlName="email">
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="pwd">Password</label>
+            <div class="col-sm-5">
+                <input type="password" id="pwd" class="form-control" name="pwd" placeholder="Enter Password" formControlName="password">
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="number">Mobile Number</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" name="number" placeholder="Enter MobileNumber" formControlName="mobilenumber">
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary">Signup</button>
+        <div class="text-left pt-4 text-muted">Already have account? <a id="forget" routerLink="/login">Login</a></div>
+        <div class="text-left pt-4 text-muted">Go Home? <a id="forget" routerLink="">Home Page</a></div>
+    </form>
+</div>
