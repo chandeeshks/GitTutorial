@@ -13,7 +13,6 @@ constructor(private auth: AuthService){}
 
 
   ngOnInit(): void {
-    
 
     }
 
